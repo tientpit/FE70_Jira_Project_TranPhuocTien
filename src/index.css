@@ -1,0 +1,143 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif !important;
+}
+
+h1 {
+  @apply text-2xl;
+}
+h2 {
+  @apply text-xl;
+}
+h3 {
+  @apply text-lg;
+}
+h5 {
+  @apply text-[0.83em];
+}
+h6 {
+  @apply text-[0.67em];
+}
+a {
+  @apply text-blue-600 underline;
+}
+
+.btn {
+  @apply bg-secondary-800 rounded-md h-8 px-2 text-white hover:bg-primary-500 transition-all duration-300 border-primary-600;
+}
+
+.input {
+  @apply h-8 p-2 border-2 border-secondary-800 hover:border-primary-600 focus:outline-primary-600 rounded-md duration-300 mobile:w-28;
+}
+
+.label {
+  @apply text-xs text-secondary-800 font-semibold block uppercase pb-2;
+}
+
+.title {
+  @apply text-3xl text-primary-800 mobile:text-xl;
+}
+
+/* .ant-layout-sider-children {
+  position: relative;
+} */
+
+@media screen and (max-width: 640px) {
+  .ant-table table {
+    @apply text-xs;
+  }
+  .ant-layout-sider-trigger {
+    display: none;
+  }
+  .ant-table-thead > tr > th,
+  .ant-table-tbody > tr > td,
+  .ant-table tfoot > tr > th,
+  .ant-table tfoot > tr > td {
+    padding: 8px 0 !important;
+  }
+}
+
+#root
+  > div
+  > section
+  > section
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div
+  > table
+  > thead
+  > tr
+  > th:nth-child(2)
+  > div
+  > span.ant-dropdown-trigger.ant-table-filter-trigger {
+  margin: 0;
+}
+
+ul.ant-menu.ant-menu-root.ant-menu-vertical.ant-menu-dark.ant-menu-inline-collapsed
+  > li
+  + li
+  + li
+  > div {
+  padding: 0 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul.ant-menu.ant-menu-root.ant-menu-vertical.ant-menu-dark.ant-menu-inline-collapsed
+  > li
+  + li
+  + li
+  > div
+  > span {
+  display: none;
+}
+
+.ant-drawer-right.ant-drawer-open .ant-drawer-content-wrapper {
+  box-shadow: none;
+}
+
+.account .ant-menu-item-selected {
+  background-color: #000c17 !important;
+}
+
+/* .account .; */
+.account > li > ul li:hover {
+  background-color: #2684FF !important;
+}
+
+.ant-table-tbody > tr {
+  height: 60px !important;
+}
+
+.ant-table-tbody > tr > * {
+  padding: unset 0 !important;
+}
+
+.ant-notification-notice-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* page prve and  next */
+.ant-pagination-item-link > span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
